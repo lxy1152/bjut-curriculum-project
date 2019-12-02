@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13FFCC33"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/profile_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFD9833">
+
+        <TextView
+            android:id="@+id/text_profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人信息"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_title"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="头像"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/profile_setting_headimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_head" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/headsep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/headshow"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#b9b6b6" />
+
+    <RelativeLayout
+        android:id="@+id/nameshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headsep"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="用户名"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profile_setting_loginname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="zhangsan"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/namesep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/nameshow"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#b9b6b6" />
+
+    <RelativeLayout
+        android:id="@+id/nicknameshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namesep"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="昵称"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profile_setting_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="张三"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/nicknamesep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/nicknameshow"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#b9b6b6" />
+
+    <RelativeLayout
+        android:id="@+id/phoneshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nicknamesep"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="手机"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profile_setting_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="136****6582"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/phonesep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/phoneshow"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#b9b6b6" />
+
+    <RelativeLayout
+        android:id="@+id/mailshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonesep"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="邮箱"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profile_setting_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="example@example.com"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mailshow"
+        android:layout_centerHorizontal="true"
+        android:background="#FFC1BFBF"
+        android:text="注销"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>

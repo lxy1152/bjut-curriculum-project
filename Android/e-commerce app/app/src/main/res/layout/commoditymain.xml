@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/commo_banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <RelativeLayout
+            android:id="@+id/commo_briefintro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#f0f0f0"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/commo_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="￥150.00"
+                android:textColor="#f10000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/img_like"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/commo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commo_price"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="男士2018新款"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#f0f0f0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="已选"
+                android:textColor="#999999"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="GTX1060 i5 8G内存 128GSSD+1T双硬盘"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#f0f0f0"
+            android:visibility="invisible">
+
+
+            <View
+                android:id="@+id/commo_main_comment_sep"
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+                android:background="#ff0000" />
+
+            <TextView
+                android:id="@+id/commo_main_comment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/commo_main_comment_sep"
+                android:text="评价"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/commo_main_comment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/commo_main_comment_title"
+                android:text="(100)"
+                android:textSize="18sp" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/commo_main_comment_sep" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

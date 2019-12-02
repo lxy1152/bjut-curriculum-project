@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/titel_shopfollowing"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/img_titlebar_bg">
+
+        <TextView
+            android:id="@+id/text_shopfollowing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关注的店铺"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+        <ImageView
+            android:id="@+id/btn_shopfollowing_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/btn_return"/>
+        <com.assistne.icondottextview.IconDotTextView
+            android:id="@+id/btn_shopfollowing_mesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/tap_message_back"
+            app:text="消息"
+            app:icon="@drawable/tap_message"
+            app:dot_visible="true"
+            app:dot_text="1"
+            app:textSize="9dp"
+            app:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/text_shopfollowing_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btn_shopfollowing_mesbtn"
+            android:text="编辑"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:id="@+id/comment_item"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/img_comment_item"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_shophead"/>
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_comment_item"
+            android:layout_margin="3dp"
+            android:text="慢生活 新生活节奏体验店"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/item_name"
+            android:layout_toRightOf="@id/img_comment_item"
+            android:text="13万人关注"
+            android:textSize="17sp"
+            android:textColor="#CCCCCC"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CCCCCC" />
+
+    </RelativeLayout>
+</RelativeLayout>

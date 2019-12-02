@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#13FFCC33">
+
+        <LinearLayout
+            android:id="@+id/searchbar"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:background="#6A7D8F"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@drawable/img_searchbar"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ic_magnifier"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:paddingLeft="6dp"
+                    android:src="@drawable/ic_magnifier" />
+
+                <TextView
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ic_magnifier"
+                    android:background="@null"
+                    android:textSize="18sp"
+                    android:hint="搜索"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <com.assistne.icondottextview.IconDotTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dot_text="1"
+                app:dot_visible="true"
+                app:icon="@drawable/tap_message"
+                app:text="消息"
+                app:textColor="#FFFFFF"
+                app:textSize="9dp" />
+        </LinearLayout>
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/searchbar" />
+
+        <LinearLayout
+            android:id="@+id/home_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/choice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_star"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_star" />
+
+                <TextView
+                    android:id="@+id/tv_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_star"
+                    android:layout_marginTop="5dp"
+                    android:text="每日星选"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_food"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_fork" />
+
+                <TextView
+                    android:id="@+id/tv_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_food"
+                    android:layout_marginTop="5dp"
+                    android:text="餐饮美食"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/baby"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_baby"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_babycart" />
+
+                <TextView
+                    android:id="@+id/tv_baby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_baby"
+                    android:layout_marginTop="5dp"
+                    android:text="婴儿护理"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/office"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_pen"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_pen" />
+
+                <TextView
+                    android:id="@+id/tv_office"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_pen"
+                    android:layout_marginTop="5dp"
+                    android:text="日常办公"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/birth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_gift"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_gift" />
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_gift"
+                    android:layout_marginTop="5dp"
+                    android:text="生日祝福"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_category1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_category"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/pets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_paw"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_paw" />
+
+                <TextView
+                    android:id="@+id/tv_pets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_paw"
+                    android:layout_marginTop="5dp"
+                    android:text="家有萌宠"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publication"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_book"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_book" />
+
+                <TextView
+                    android:id="@+id/tv_publication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_book"
+                    android:layout_marginTop="5dp"
+                    android:text="图书音像"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/threec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_laptop"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_laptop" />
+
+                <TextView
+                    android:id="@+id/tv_threec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_laptop"
+                    android:layout_marginTop="5dp"
+                    android:text="电子数码"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cloth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_cloth"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_clothes" />
+
+                <TextView
+                    android:id="@+id/tv_cloth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_cloth"
+                    android:layout_marginTop="5dp"
+                    android:text="男女服饰"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/etc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_points"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:src="@drawable/tap_points" />
+
+                <TextView
+                    android:id="@+id/tv_etc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="其他人在看"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_prime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_category1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ib_dot_small_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:layout_toLeftOf="@id/ib_dot_mid_l">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dot_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ib_dot_mid_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_toLeftOf="@id/ib_dot_big_l">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dot_mid" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ib_dot_big_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toLeftOf="@id/prime">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dot_big" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/prime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_prime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精选活动"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ib_dot_big_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@id/text_prime"
+                    android:src="@drawable/ic_dot_big" />
+
+                <ImageView
+                    android:id="@+id/ib_dot_mid_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/ib_dot_big_r"
+                    android:src="@drawable/ic_dot_mid" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:layout_toRightOf="@id/ib_dot_mid_r"
+                    android:src="@drawable/ic_dot_small" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_prime_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_prime"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/home_item0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_milk0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_milk" />
+
+                <TextView
+                    android:id="@+id/text_milk0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_milk0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="三元脱脂奶"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_price0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_milk0"
+                    android:layout_centerHorizontal="true"
+                    android:text="42.00"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_item1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_milk1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_milk" />
+
+                <TextView
+                    android:id="@+id/text_milk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_milk1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="三元脱脂奶"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_milk1"
+                    android:layout_centerHorizontal="true"
+                    android:text="42.00"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_item2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_milk2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_milk" />
+
+                <TextView
+                    android:id="@+id/text_milk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_milk2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="三元脱脂奶"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_milk2"
+                    android:layout_centerHorizontal="true"
+                    android:text="42.00"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_item3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ib_milk3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_milk" />
+
+                <TextView
+                    android:id="@+id/text_milk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ib_milk3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="三元脱脂奶"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_milk3"
+                    android:layout_centerHorizontal="true"
+                    android:text="42.00"
+                    android:textColor="#FF3333"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.finalwork.android.e_commerce.view.component.ListViewForScrollView
+            android:id="@+id/mainlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/home_prime_detail"
+            android:animationCache="false"
+            android:scrollingCache="false" />
+
+    </RelativeLayout>
+
+</ScrollView>

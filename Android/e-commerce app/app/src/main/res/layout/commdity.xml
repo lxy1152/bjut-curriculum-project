@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/commo_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFD9833">
+
+        <ImageView
+            android:id="@+id/btn_commo_return"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/btn_return" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/btn_commo_return">
+
+            <TextView
+                android:id="@+id/commo_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="商品"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/commo_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="详情"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/commo_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="评价"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/commo_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/commo_bottombar"
+        android:layout_below="@+id/commo_topbar"/>
+    <LinearLayout
+        android:id="@+id/commo_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_contact" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_store"
+                    android:id="@+id/iv_shop"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_shoppingcart_black" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="联系客服"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="进入店铺"
+                    android:textAlignment="center"
+                    android:id="@+id/tv_shop"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="购物车"
+                    android:textAlignment="center" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/commo_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ca3939"
+            android:singleLine="true"
+            android:text="加入购物车"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>

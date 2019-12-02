@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/img_titlebar_bg">
+
+        <TextView
+            android:id="@+id/text_shopfollowing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关注的店铺"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+        <TextView
+            android:id="@+id/text_shopfollowing_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="65dp"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/btn_shopfollowing_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="全选"
+            android:textColor="#CCCCCC"
+            android:textSize="17sp"/>
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="#FF0000"
+            android:text="删除所选店铺"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+</RelativeLayout>

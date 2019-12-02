@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/home_prime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_category1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ib_dot_small_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:layout_toLeftOf="@id/ib_dot_mid_l">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dot_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ib_dot_mid_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_toLeftOf="@id/ib_dot_big_l">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dot_mid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ib_dot_big_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/prime">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dot_big" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/prime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_prime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="精选活动"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/ib_dot_big_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@id/text_prime"
+                android:src="@drawable/ic_dot_big" />
+
+            <ImageView
+                android:id="@+id/ib_dot_mid_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_toRightOf="@id/ib_dot_big_r"
+                android:src="@drawable/ic_dot_mid" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:layout_toRightOf="@id/ib_dot_mid_r"
+                android:src="@drawable/ic_dot_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_firstline"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/home_prime"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitXY" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_firstline"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF">
+        <TableRow
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/img_slf"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/img_sls"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitXY"
+
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/img_slt"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitXY"
+
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="精品男装"
+                android:textAlignment="center"
+                android:id="@+id/tvf"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="精品男装"
+                android:textAlignment="center"
+                android:id="@+id/tvs"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="精品男装"
+                android:textAlignment="center"
+                android:id="@+id/tvt"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

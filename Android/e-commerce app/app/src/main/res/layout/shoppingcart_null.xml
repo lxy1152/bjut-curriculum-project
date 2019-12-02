@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/titel_shoppingcart_null"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/img_titlebar_bg">
+
+        <TextView
+            android:id="@+id/text_shoppingcart_null_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+        <com.assistne.icondottextview.IconDotTextView
+            android:id="@+id/btn_shoppingcart_null_mesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/tap_message_back"
+            app:dot_text="1"
+            app:dot_visible="true"
+            app:icon="@drawable/tap_message"
+            app:text="消息"
+            app:textColor="#FFFFFF"
+            app:textSize="9dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/titel_shoppingcart_null"
+        android:id="@+id/cart_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/text_shoppingcart_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/img_shoppingcart_cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/tap_cart_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_shoppingcart_cart"
+                android:text="购物车是空的"
+                android:textColor="#888888"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_shoppingcart_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/btn_shoppingcart_null_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btnshape"
+                android:text="为您推荐"
+                android:textColor="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/btn_shoppingcart_null_followed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/btn_shoppingcart_null_recommend"
+                android:background="@drawable/btnshape_red"
+                android:text="查看关注"
+                android:textColor="#FF0000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/cart_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titel_shoppingcart_null"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

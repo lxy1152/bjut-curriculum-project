@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/img_titlebar_bg">
+
+        <TextView
+            android:id="@+id/text_shoppingcart_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+        <com.assistne.icondottextview.IconDotTextView
+            android:id="@+id/btn_shoppingcart_mesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/tap_message_back"
+            app:text="消息"
+            app:icon="@drawable/tap_message"
+            app:dot_visible="true"
+            app:dot_text="1"
+            app:textSize="9dp"
+            app:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/text_shoppingcart_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btn_shoppingcart_mesbtn"
+            android:text="编辑"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/btn_shoppingcart_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="全选"
+            android:textColor="#CCCCCC"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/text_shoppingcart_totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/btn_shoppingcart_all"
+            android:layout_centerVertical="true"
+            android:text="合计："
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/text_shoppingcart_pricenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/text_shoppingcart_totalprice"
+            android:layout_centerVertical="true"
+            android:text="￥300.00"
+            android:textSize="17sp"
+            android:textColor="#FF0000"/>
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="#FF0000"
+            android:text="去结算"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+</RelativeLayout>

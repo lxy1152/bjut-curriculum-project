@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:id="@+id/returngoods_item"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/img_returngoods_item"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_manshirt"/>
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_returngoods_item"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3dp"
+            android:text="时尚男装 2018夏季新款 休闲"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_returngoods_item"
+            android:layout_below="@id/item_name"
+            android:text="￥100.00"
+            android:textSize="20sp"
+            android:textColor="#FF0000" />
+        <TextView
+            android:id="@+id/text_returngoods_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="XL 棕红拼花"
+            android:textSize="15sp"
+            android:textColor="#CCCCCC"
+            android:layout_below="@id/item_name"
+            android:layout_toRightOf="@id/item_price"/>
+        <TextView
+            android:id="@+id/btn_returngoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/item_price"
+            android:layout_toRightOf="@id/img_returngoods_item"
+            android:text="查看退货流程>>"
+            android:textSize="17sp"
+            android:textColor="#FF0000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CCCCCC" />
+
+    </RelativeLayout>
+</RelativeLayout>
