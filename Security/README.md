@@ -35,8 +35,8 @@
 执行如下代码：
 
 ```
-git clone https://github.com/lxy1152/SecurityWatcher.git ./security_watcher/
-cd security_watcher/
+git clone -b security https://github.com/lxy1152/BJUTCurriculumProject.git ./security
+cd security/
 ./run.sh
 ```
 
@@ -66,10 +66,6 @@ cd security_watcher/
 ### functions目录文件说明
 
 该目录下的文件均为所提供的功能，文件命名方式应为：`xx_xx.sh`。如：`find_file.sh`。
-
-## 许可
-
-基于[MIT](LICENSE)许可开源
 
 
 
