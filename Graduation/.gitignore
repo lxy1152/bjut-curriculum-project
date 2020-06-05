@@ -1,6 +1,4 @@
 /venv
 /.idea
-/config
 /output
 *.pyc
-*.db
