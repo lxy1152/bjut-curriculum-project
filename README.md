@@ -21,6 +21,7 @@
 | 嵌入式系统应用设计 |         基于Arduino开发板完成的车距监测系统         |   :heavy_check_mark:   |   embedded    |
 |  软件综合项目设计  | 基于Python与第三方接口实现的图片文字识别与翻译软件  |   :heavy_check_mark:   | comprehensive |
 |    信息安全技术    |                 远程安全管理小程序                  |   :heavy_check_mark:   |   security    |
+|    毕业设计   |                 专注度检测系统的设计与实现                  |   :heavy_check_mark:   |   graduation    |
 
 ## 使用说明
 
