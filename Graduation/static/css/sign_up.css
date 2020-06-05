@@ -1,0 +1,93 @@
+/* The style sheet of index page. */
+body {
+    overflow-y: hidden;
+    background-image: url("../img/bg.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    top: 5%;
+    bottom: 5%;
+    margin: 0 auto;
+    width: 35%;
+    height: 90%;
+    background-color: #fafbfe;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    border-radius: 10px;
+}
+
+main #logo {
+    height: 15%;
+    background-color: #727cf5;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+main #logo img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    position: relative;
+    top: 10px;
+}
+
+main form {
+    position: relative;
+    width: 80%;
+    left: 12%;
+    right: 10%;
+    top: 5%;
+}
+
+main form .form-group label {
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+main form .form-group .help-block {
+    display: inline;
+    color: #FF534D;
+}
+
+main form .form-group input {
+    height: 38px;
+    border: 1px solid #dee2e6;
+    font-size: 15px;
+}
+
+#commit {
+    background-color: #727cf5;
+    border-color: #727cf5;
+    /*box-shadow: 0 2px 6px 0 rgba(114, 124, 245, .5);*/
+    border-radius: 5px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 20%;
+    line-height: 2.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+#commit:hover {
+    color: #fff;
+    background-color: #4e5bf2;
+    border-color: #4250f2;
+}
+
+main #to-reg {
+    margin-top: 10px;
+    color: #98a6ad;
+    text-align: center;
+}
+
+main #to-reg #reg {
+    font-weight: 600;
+}
+
+main #to-reg #reg:hover {
+    cursor: pointer;
+}

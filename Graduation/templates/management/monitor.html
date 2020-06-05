@@ -1,0 +1,36 @@
+{% extends 'management/base.html' %}
+
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/monitor.css') }}"/>
+{% endblock %}
+
+{% block subcontent %}
+    {{ super() }}
+
+    <div id="small-window">
+        <img src="{{ url_for('video_feed') }}" alt="monitor" draggable="false">
+    </div>
+
+    <main>
+        <div id="monitor">
+            <h5>实时监测</h5>
+                        <img src="{{ url_for('video_feed') }}" alt="monitor" draggable="false">
+{#            <img src="{{ url_for('static', filename='img/22-46.jpg') }}" alt="monitor" draggable="false">#}
+        </div>
+{#        <div id="overview-chart">#}
+{#            <p>启动摄像头：默认摄像头</p>#}
+{#            <p>Face++平台使用情况：正常</p>#}
+{#            <p>TGAM模块使用情况：正常</p>#}
+{#        </div>#}
+        <div id="expression-chart"></div>
+        <div id="eye-chart"></div>
+        <div id="wave-chart"></div>
+    </main>
+{% endblock %}
+
+{% block js %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/management/heatmap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/management/monitor.js') }}" id="monitorjs"></script>
+{% endblock %}

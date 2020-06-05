@@ -1,0 +1,164 @@
+#small-window {
+    position: fixed;
+    top: 400px;
+    left: 0;
+    width: 300px;
+    display: none;
+}
+
+#small-window img {
+    width: 300px;
+}
+
+main #dp {
+    height: 50px;
+    background: white;
+    margin-top: 30px;
+    margin-right: 50px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main #dp .J-datepicker-day {
+    height: 100%;
+    border: none !important;
+}
+
+main #dp .J-datepicker-day i {
+    font-size: 16px;
+    vertical-align: center;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+main #dp .J-datepicker-day input {
+    font-size: 16px;
+    caret-color: transparent;
+}
+
+main #dp .J-datepicker-day input:hover {
+    cursor: pointer;
+}
+
+main #no-info-tip {
+    height: 500px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background: white;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main #no-info-tip span {
+    display: inline-block;
+    margin-top: 240px;
+    color: rgb(173, 181, 189);
+}
+
+main #video-choose {
+    overflow: auto;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background: white;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+
+main #video-choose ul {
+    list-style: none;
+    margin-left: -35px;
+}
+
+main #video-choose ul li {
+    float: left;
+    width: 31%;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+main #video-choose ul li:hover {
+    cursor: pointer;
+}
+
+main #video-choose ul li img {
+    width: 100%;
+}
+
+main #video-choose ul li span {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+main #monitor {
+    display: none;
+    float: left;
+    background: white;
+    padding-bottom: 20px;
+    height: 425px;
+    transition: all .2s ease-out;
+}
+
+main #monitor h5 {
+    color: #6c757d;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+main #monitor video {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+main #overview-chart {
+    display: none;
+    background: white;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    height: 425px;
+    transition: all .2s ease-out;
+}
+
+main #expression-chart {
+    display: none;
+    background: white;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    height: 425px;
+    transition: all .2s ease-out;
+}
+
+main #eye-chart {
+    display: none;
+    background: white;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    height: 425px;
+    transition: all .2s ease-out;
+}
+
+main #wave-chart {
+    display: none;
+    background: white;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    height: 425px;
+    transition: all .2s ease-out;
+}

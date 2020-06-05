@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+{#<video controls="controls">#}
+{#    <source src="{{ url_for('get_source', tp="video", date="2020-02-23", filename="17-16.mp4") }}" type="video/mp4">#}
+{#</video>#}
+{#<img src="{{ url_for('get_source', tp="video", date="2020-02-23", filename="16-50.jpg") }}">#}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+    setTimeout(function () {
+        $('body').append("<img src=\"{{ url_for('get_source', filename='video\\2020-02-23\\17-16.jpg') }}\">");
+    }, 1000);
+</script>
+</body>
+</html>

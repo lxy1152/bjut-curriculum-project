@@ -1,0 +1,77 @@
+main #overview-chart {
+    background: white;
+    height: 300px;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+main .jumbotron {
+    min-width: 900px;
+    max-width: 900px;
+    background: #ffffff;
+    height: 250px;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+main .jumbotron h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .jumbotron p {
+    text-align: center;
+}
+
+main #overview-data {
+    background: white;
+    height: 150px;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+main #overview-data .sep {
+    border-right: solid 1px #eff1f3;
+}
+
+main #overview-data .data-item {
+    width: 24%;
+    height: 150px;
+    display: inline-block;
+}
+
+main #overview-data .data-item i {
+    display: block;
+    color: #98a6ad;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+main #overview-data .data-item #data-item-number {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: #6c757d;
+    margin-top: -10px;
+    margin-left: -5px;
+}
+
+main #overview-data .data-item #data-item-des {
+    display: block;
+    text-align: center;
+    color: #98a6ad;
+    font-size: 15px;
+}

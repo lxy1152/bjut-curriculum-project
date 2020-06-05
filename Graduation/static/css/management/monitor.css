@@ -1,0 +1,85 @@
+#small-window {
+    position: fixed;
+    top: 400px;
+    left: 0;
+    width: 300px;
+    display: none;
+}
+
+#small-window img {
+    width: 300px;
+}
+
+main #monitor {
+    display: inline-block;
+    float: left;
+    background: white;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    height: 425px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+main #monitor h5 {
+    color: #6c757d;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+main #monitor img {
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+main #overview-chart {
+    display: inline-block;
+    background: white;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    height: 425px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+main #expression-chart {
+    display: inline-block;
+    background: white;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    height: 425px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+main #eye-chart {
+    background: white;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    height: 425px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+main #wave-chart {
+    background: white;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    height: 425px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}

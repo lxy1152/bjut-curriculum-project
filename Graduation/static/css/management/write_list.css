@@ -1,0 +1,82 @@
+main {
+    overflow-y: scroll;
+    min-width: 900px;
+    max-width: 900px;
+    background: #ffffff;
+    margin-right: 50px;
+    margin-top: 30px;
+    height: 450px;
+}
+
+main div h3 {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+main button {
+    display: inline;
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px;
+    border-radius: 5px;
+    color: black;
+    width: 100px;
+    line-height: 2.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+#tip {
+    margin-top: 140px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(173, 181, 189);
+}
+
+main #write-list {
+    overflow: auto;
+    list-style: none;
+}
+
+main #show-write table {
+    table-layout: fixed;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: medium;
+    width: 95%;
+}
+
+main #show-write table tr th {
+    padding: 10px;
+    text-align: center;
+}
+
+main #show-write table tr td {
+    width: 25%;
+    padding: 10px;
+    word-break: keep-all; /* 不换行 */
+    white-space: nowrap; /* 不换行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+main #show-write table tr td:hover {
+    cursor: pointer;
+}
+
+main #show-text {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 1px solid rgb(173, 181, 189);
+    border-radius: 5px;
+}
+
+main #editor {
+    height: 340px;
+    border: none;
+}

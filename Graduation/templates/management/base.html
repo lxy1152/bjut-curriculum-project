@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}专注度检测{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/base.css') }}"/>
+{% endblock %}
+
+{% block subcontent %}
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <i class="dripicons-icon" id="setting">~</i>
+                    <i class="dripicons-icon" id="logout">[</i>
+                </li>
+                <li id="profile">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="{{ url_for('static', filename='img/default_avatar.jpg') }}" alt="avatar"
+                             id="profile-avatar">
+                        <div id="profile-information">
+                            <span id="profile-information-name">{{ info.name }}</span>
+                            <span id="profile-information-job">
+                                {% if info.position == "admin" %}
+                                    管理员
+                                {% elif info.position == "teacher" %}
+                                    教师
+                                {% else %}
+                                    学生
+                                {% endif %}
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default" id="nav-left"
+            {% if info.position == 'student' %} style="height: 250px !important;" {% endif %}>
+        <div id="nav-left-profile">
+            <img src="{{ url_for('static', filename='img/default_avatar.jpg') }}" alt="avatar"/>
+            <span>{{ info.name }}</span>
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" data-toggle="tab" id="nav-left-index"
+                    {% if flag == "index" %} class="active" {% else %} class="deactivate" {% endif %}>
+                <a href="#"><i class="dripicons-icon">&#xe022;</i>首页</a>
+            </li>
+            {% if not info.position == "student" %}
+                <li role="presentation" data-toggle="tab" id="nav-left-monitor"
+                        {% if flag == "monitor" %} class="active" {% else %} class="deactivate" {% endif %}>
+                    <a href="#"><i class="dripicons-icon">&#xe037;</i>实时监测</a>
+                </li>
+            {% endif %}
+            {% if not info.position == "student" %}
+                <li role="presentation" data-toggle="tab" id="nav-left-video"
+                        {% if flag == "videotape" %} class="active" {% else %} class="deactivate" {% endif %}>
+                    <a href="#"><i class="dripicons-icon">N</i>录像分析</a>
+                </li>
+            {% endif %}
+            {% if not info.position == "student" %}
+                <li role="presentation" data-toggle="tab" id="nav-left-write_list"
+                        {% if flag == "write_list" %} class="active" {% else %} class="deactivate" {% endif %}>
+                    <a href="#"><i class="dripicons-icon">c</i>教学计划</a>
+                </li>
+            {% endif %}
+            {% if info.position == "student" %}
+                <li role="presentation" data-toggle="tab" id="nav-left-video"
+                        {% if flag == "videotape" %} class="active" {% else %} class="deactivate" {% endif %}>
+                    <a href="#"><i class="dripicons-icon">c</i>数据展示</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block js %}
+    <script src="{{ url_for('static', filename='js/management/base.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/management/echarts-all.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/syalert.min.css') }}"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sign_up.css') }}"/>
+{% endblock %}
+
+{% block subcontent %}
+    <main>
+        <div id="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}">
+        </div>
+        <form>
+            <div class="form-group" id="input-number">
+                <label for="sp-number">用户编号</label>
+                <span class="help-block"></span>
+                <input id="sp-number" class="form-control" placeholder="学号/教工号" maxlength="8">
+            </div>
+            <div class="form-group" id="input-email">
+                <label for="sp-email">电子邮箱</label>
+                <span class="help-block"></span>
+                <input id="sp-email" class="form-control" placeholder="电子邮箱" type="email" maxlength="256">
+            </div>
+            <div class="form-group" id="input-name">
+                <label for="sp-name">真实姓名</label>
+                <span class="help-block"></span>
+                <input id="sp-name" class="form-control" placeholder="真实姓名" maxlength="50">
+            </div>
+            <div class="form-group" id="input-password">
+                <label for="sp-password">密码</label>
+                <span class="help-block">以字母开头，只能包含字符、数字和下划线(6-18位)</span>
+                <input id="sp-password" class="form-control" placeholder="密码" type="password" maxlength="18">
+            </div>
+        </form>
+        <button id="commit">注册</button>
+        <div id="to-reg">
+            <span>已有账号？</span><span id="reg">立即登录</span>
+        </div>
+
+        <div class="sy-alert sy-alert-alert animated" sy-enter="zoomIn" sy-leave="zoomOut" sy-type="alert"
+             sy-mask="true" id="commit-alert">
+            <div class="sy-title">提示</div>
+            <div class="sy-content"></div>
+            <div class="sy-btn">
+                <button>确定</button>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block js %}
+    <script src="{{ url_for('static', filename='js/syalert.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/sign_up.js') }}"></script>
+{% endblock %}

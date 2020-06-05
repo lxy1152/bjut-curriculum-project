@@ -1,0 +1,32 @@
+main {
+    width: 900px;
+    height: 400px;
+    background: white;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+main h5 {
+    color: #6c757d;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+main img {
+    width: 25%;
+    margin-left: 200px;
+    border-radius: 110px;
+}
+
+main #setting-profile {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 17px;
+}
+
+main #setting-profile p {
+    margin: 20px;
+}

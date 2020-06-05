@@ -1,0 +1,27 @@
+{% extends 'management/base.html' %}
+
+{% block css %}
+    {{ super() }}
+    <link href="{{ url_for('static', filename='css/management/quill.snow.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/write_list.css') }}"/>
+{% endblock %}
+
+{% block subcontent %}
+    {{ super() }}
+    <main>
+        <div>
+            <h3>教学计划</h3>
+            <button id="new-task">新建计划</button>
+        </div>
+        <div id="tip" style="display: none">暂无数据</div>
+        <div id="show-write">
+            <table border="1" id="write-list"></table>
+        </div>
+    </main>
+{% endblock %}
+
+{% block js %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/management/quill.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/management/write_list.js') }}"></script>
+{% endblock %}

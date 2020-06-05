@@ -1,0 +1,53 @@
+{% extends 'management/base.html' %}
+
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/index.css') }}"/>
+{% endblock %}
+
+{% block subcontent %}
+    {{ super() }}
+    <main>
+        {#        <div id="overview-chart"></div>#}
+        <div class="jumbotron">
+            <h2>{% if info.position == "teacher" %}教师
+            {% elif info.position == "admin" %}管理员
+            {% elif info.position == "student" %}学生
+            {% endif %}
+                {{ info.name }}，欢迎您的使用</h2>
+            <p>从左边选择你想使用的功能吧👈</p>
+        </div>
+        {% if info.position == "admin" or info.position == "teacher" %}
+            <div id="overview-data">
+                <div class="data-item sep">
+                    <i class="dripicons-icon">Y</i>
+                    <span id="data-item-number">{{ info.days }}</span>
+                    <span id="data-item-des">运行天数</span>
+                </div>
+
+                <div class="data-item sep">
+                    <i class="dripicons-icon">&#xe008;</i>
+                    <span id="data-item-number">{{ info.store }}</span>
+                    <span id="data-item-des">信息存储</span>
+                </div>
+
+                <div class="data-item sep">
+                    <i class="dripicons-icon">&#xe057;</i>
+                    <span id="data-item-number">{{ info.member }}</span>
+                    <span id="data-item-des">班级成员</span>
+                </div>
+
+                <div class="data-item">
+                    <i class="dripicons-icon">&#xe025;</i>
+                    <span id="data-item-number">{{ info.device }}</span>
+                    <span id="data-item-des">设备数量</span>
+                </div>
+            </div>
+        {% endif %}
+    </main>
+{% endblock %}
+
+{% block js %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/management/index.js') }}"></script>
+{% endblock %}

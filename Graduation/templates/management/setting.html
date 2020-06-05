@@ -1,0 +1,30 @@
+{% extends 'management/base.html' %}
+
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/setting.css') }}"/>
+{% endblock %}
+
+{% block subcontent %}
+    {{ super() }}
+    <main>
+        <h5>设置</h5>
+        <img src="{{ url_for('static', filename='img/default_avatar.jpg') }}" alt="avatar"/>
+        <div id="setting-profile">
+            <p>用户名: {{ info.name }}</p>
+            <p>职位:
+                {% if info.position == 'student' %}
+                    学生
+                {% elif info.position == 'teacher' %}
+                    教师
+                {% elif info.position == 'admin' %}
+                    管理员
+                {% endif %}</p>
+            <p>邮箱: {{ info.email }}</p>
+        </div>
+    </main>
+{% endblock %}
+
+{% block js %}
+    {{ super() }}
+{% endblock %}

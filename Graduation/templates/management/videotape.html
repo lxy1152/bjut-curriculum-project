@@ -1,0 +1,51 @@
+{% extends 'management/base.html' %}
+
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/videotape.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/datepicker.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/management/iconfont.css') }}">
+{% endblock %}
+
+{% block subcontent %}
+    {{ super() }}
+    {#    <div id="small-window">#}
+    {#        <video controls="controls">#}
+    {#            <source src="{{ url_for('get_source', filename='video\\2020-02-23\\17-16.mp4') }}" type="video/mp4">#}
+    {#        </video>#}
+    {#    </div>#}
+
+    <main>
+        <div id="dp">
+            <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day">
+                <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                <input type="text" autocomplete="off" name="" placeholder="选择日期"
+                       class="c-datepicker-data-input only-date"
+                       value="">
+            </div>
+        </div>
+        <div id="no-info-tip">
+            <span>请选择某一天</span>
+        </div>
+
+        <div id="video-choose">
+            <ul></ul>
+        </div>
+
+        <div id="monitor">
+            <h5>录像回放</h5>
+            <video controls="controls" autoplay></video>
+        </div>
+{#        <div id="overview-chart"></div>#}
+        <div id="expression-chart"></div>
+        <div id="eye-chart"></div>
+        <div id="wave-chart"></div>
+    </main>
+{% endblock %}
+
+{% block js %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/management/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/management/datepicker.all.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/management/videotape.js') }}" id="videotapejs"></script>
+{% endblock %}
