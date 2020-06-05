@@ -1,5 +1,5 @@
 # 专注度检测系统
-![screenshots](\Graduation\screenshots.png)
+![screenshots](/Graduation/screenshots.png)
 
 ## 前言
 本分支中的项目是我的毕业设计，我简单介绍一下项目的要求以及我在完成毕设后的一点感想。
