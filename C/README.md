@@ -20,7 +20,7 @@ C语言实现的五子棋游戏
 
 VisualStudio2013
 
-:warning:因为使用EGE图形库，请确认包含graphics.h
+:warning:因为使用EGE图形库，请确认包含graphics.h。关于如何使用EGE图形库，请自行查找资料。
 
 ## 使用
 
